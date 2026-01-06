@@ -45,8 +45,7 @@ const onDrop = (event: DragEvent) => {
 }
 
 const sendFile = async () => {
-  const URL_BASE = import.meta.env.VITE_API_URL
-  console.log(URL_BASE)
+  // const URL_BASE = import.meta.env.VITE_API_URL
   const formData = new FormData()
   formData.append('file', data.value)
   try {
@@ -55,10 +54,11 @@ const sendFile = async () => {
     }
     isLoading.value = true
     summary.value = null
-    const response = await fetch(`${URL_BASE}/file`, {
+    const response = await fetch(`/file`, {
       method: 'POST',
       body: formData,
       mode: 'cors',
+
       headers: {
         'Access-Control-Allow-Origin': '*',
       },
