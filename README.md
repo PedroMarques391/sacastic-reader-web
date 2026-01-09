@@ -1,49 +1,39 @@
-# sacastic-reader
+# Sacastic Reader
 
-This template should help get you started developing with Vue 3 in Vite.
+> Leitor de PDF moderno, rápido e minimalista, construído com **Vue.js** e estilizado com **TailwindCSS**, consumindo a [`sacastic-reader-api`](https://github.com/PedroMarques391/sacastic-api).
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+<p align="center">
+  <img src="https://img.shields.io/badge/Vue.js-3-42b883?logo=vue.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-Yes-3178c6?logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-%3E%3D18-339933?logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-Yes-38bdf8?logo=tailwindcss&logoColor=white" />
+</p>
 
-## Recommended Browser Setup
+---
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Visão Geral
 
-## Type Support for `.vue` Imports in TS
+O **Sacastic Reader** foi criado como um leitor de PDF orientado ao consumo de uma API responsável por analisar o conteúdo do documento e retornar um **resumo em tom sarcástico**.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+O principal objetivo deste frontend é **praticar e consolidar conceitos do Vue 3**, explorando recursos como:
 
-## Customize configuration
+- Upload e seleção de documentos via *dropdown*
+- Reatividade utilizando `ref()`
+- *Bindings* declarativos
+- Componentização e separação de responsabilidades
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+O projeto foi estruturado para evoluir naturalmente, com planos de adoção de **estado global utilizando Pinia**, tornando a aplicação mais escalável e organizada à medida que novas funcionalidades forem adicionadas.
 
-## Project Setup
+---
 
-```sh
-npm install
-```
+## Tecnologias
 
-### Compile and Hot-Reload for Development
+As principais tecnologias utilizadas neste projeto:
 
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
-# sacastic-reader-web
+- **Vue.js 3** – reatividade simples, expressiva e produtiva  
+- **TailwindCSS** – estilização rápida, consistente e escalável  
+- **TypeScript** – previsibilidade, tipagem forte e segurança  
+- **Vite** – build rápido e ambiente de desenvolvimento ágil  
+- **Sacastic Reader API** – backend desacoplado, responsável pelo processamento e sumarização dos PDFs
